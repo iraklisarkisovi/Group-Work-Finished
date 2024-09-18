@@ -9,6 +9,10 @@ const html = document.querySelector('html, body')
 const closeBtn = document.querySelector('.transform-btn-close')
 const closeBtnsecond = document.querySelector('.close-modal')
 
+const inputBTN = document.querySelector('.submit-btn');
+const emailInput = document.querySelector('.email-input');
+const invalidEmail = document.querySelector('.invalid-email');
+
 let index = 0;
 
 nextButton.addEventListener('click', () => {
@@ -55,3 +59,23 @@ closeBtnsecond.addEventListener('click', () => {
     closeBtn.style.display = 'none';
     transformBtn.style.display ='block';
 })
+
+inputBTN.addEventListener('click', () => {
+    if (!emailInput.value.includes('@')) {
+        invalidEmail.style.display = "block";
+        emailInput.style.border = "1px solid red";
+        emailInput.style.color = "red";
+    } else {
+        invalidEmail.style.display = "none";
+        emailInput.style.color = "black";
+        emailInput.style.border = "none";
+    }
+});
+
+emailInput.addEventListener('input', () => {
+    if (emailInput.value === "") {
+        invalidEmail.style.display = "none";
+        emailInput.style.color = "black";
+        emailInput.style.border = "none";
+    }
+});
