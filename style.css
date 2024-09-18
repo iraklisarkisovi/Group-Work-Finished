@@ -1,8 +1,8 @@
-/* *{
+*{
     margin:0;
     padding: 0;
 }
- */
+
 
 
 html, body {
@@ -14,6 +14,7 @@ header{
     align-items: center;
     justify-content: space-around;
     padding: 30px;
+    height: auto;
 }
 
 ul{
@@ -157,7 +158,12 @@ button :hover{
 }
 
 .aboutmanage{
-    margin-bottom: 200px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+}
+
+.aboutmanage p{
+    margin-top: 20px;
 }
 
 .sections{
@@ -166,6 +172,10 @@ button :hover{
 
 .getstarted{
     padding: 40px;
+}
+
+.getstarted p{
+    margin-top: 20px;
 }
 
 .paragraphmain{
@@ -199,11 +209,393 @@ button :hover{
 }
 
 .card{
-        position: relative;
+    position: relative;
     width: 70%;
     max-width: 800px;
     overflow: hidden;
 }
 
+footer {
+    background-color: #242A3A;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 150px;
+}
+.linkss{
+    margin-left: 10px;
+}
+
+.social-links a {
+    margin-right: 20px;
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.footer-nav ul {
+    list-style: none;
+    margin-right: 50px;
+}
+.last-li{
+    color: white;
+    transition: color 300ms ease-in-out;
+}
+.last-li:hover{
+    color: hsl(12, 88%, 59%);
+}
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-newsletter {
+    display: flex;
+    align-items: center;
+    margin-top:100px;
+}
+
+.email-input {
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.submit-btn {
+    background-color: #FF774A;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #ff5933;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+.Simplify {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1439" height="360"><g fill="%23FFF0EC" fill-rule="evenodd" opacity=".071" transform="translate(-171 -373)"><rect width="310.431" height="708" x="205" y="410" rx="155.215" transform="scale(1 -1) rotate(-45 -1484.244 0)"/><rect width="310.431" height="708" x="1269" y="7" rx="155.215" transform="scale(1 -1) rotate(-45 552.684 0)"/></g></svg>');
+    background-color: hsl(12, 88%, 59%);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    height: 120px;
+}
+
+.Simplify h2{
+    margin-left: 60px;
+}
+
+.Simplify-p {
+    margin-top: 10px ;
+    color: white;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.Simplify-btn {
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    transition: background-color 300ms ease, color 300ms ease, box-shadow 300ms ease;
+    background-color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    color: hsl(12, 88%, 59%);
+    margin-right: 120px;
+}
+
+.name{
+    color: white;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+.team-slider {
+    margin: auto;
+    padding: auto;
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 30px;
+    margin-bottom: 100px;
+    background-color: transparent;
+}
+
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 0.5s ease-in-out;
+}
+
+.team-member {
+    min-width: 40%;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    background-color: rgba(241, 241, 241, 0.651);
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.team-member h2{
+    margin-bottom: 10px;
+}
+
+.team-member p{
+    margin-bottom: 10px;
+}
+
+.prev-btn, .next-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev-btn {
+    left: 10px;
+    background-color: #ff5933;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+.next-btn {
+    right: 10px;
+    background-color: #ff5933;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#transform{
+    display: block;
+}
+
+.transform-btn{
+    display: none;
+    cursor: pointer;
+}
+
+.transform-btn img{
+    width: 50px;
+    height: auto;
+}
+
+.modal-shadow{
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    background: linear-gradient(180deg, rgba(128, 128, 128, 0.527), rgba(0, 0, 0, 0.815));   
+    z-index: 2;
+    display: none;
+}
+
+.transform-btn-close{
+    display: none;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.transform-btn-close img{
+    width: 38px;
+    height: 35px;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+.uselessbtn{
+    display: block;
+}
+
+.get-started{
+    margin-left: 45%;
+    margin-bottom: 50px;
+}
+
+.section-background{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    #transform{
+        position: absolute;
+        display: block;
+        background-color: #ffffff;
+        padding: 50px;
+        transform: translateX(1000px);
+        border-radius: 10px;
+        z-index: 3;
+        transition: all 0.5s ease-in-out;
+    }
+    .transform-btn{
+        display: block;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main img{
+        order: 1;
+    }
+    .getstarted{ 
+        order: 2;
+    }
+    header button{
+        display: none;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+    .main img{
+        width: 500px;
+    }
+    .logo img{
+        width: 1000px;
+    }
+    .bg{
+        margin-top: -100px;
+        margin-right: 50px;
+        width: 600px;
+    }
+    .getstarted{
+        text-align: center;
+    }
+    .getstarted p{
+        margin-top: 20px;
+    }
+    .getstarted button{
+        margin-left: 30%;
+    }
+    .main2{
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+    }
+    .aboutmanage{
+        text-align: center;
+    }
+    .sections{
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+    .paragraphmain2{
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding-left: 0px;
+    }
+    .section-background{
+        background-color:  #ff76573b;
+        position: absolute;
+        width: 100%;
+        height: 44px;
+        z-index: -1;
+        margin-left: 20px;
+        display: block;
+    }
+    .slider-members{
+        max-width: 40%;
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 10px;
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 50px;
+        background-color: rgba(241, 241, 241, 0.651);
+        padding: 10px;
+        margin-left: 30px;
+    }
+    .bg2{
+        position: absolute;
+        z-index: -1;
+        top: 1100px; 
+        right: 1500px; 
+        bottom: -50px;
+    }
+    .team-slider {
+        width: 80%;
+    }
+    .get-started{
+        display: none;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .aboutmanage{
+        margin-top: 100px;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 1440px){
+    .bg2{
+        right: 1700px; 
+    }
+
+}
+
